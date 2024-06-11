@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #2874F0;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .header .search-bar {
+            display: flex;
+            flex: 1;
+            margin-right: 20px;
+            flex-wrap: wrap;
+        }
+        .header .search-bar input {
+            flex: 1;
+            padding: 5px;
+            min-width: 200px;
+        }
+        .header .search-bar button {
+            padding: 5px;
+            background-color: #FF9F00;
+            border: none;
+            color: white;
+            min-width: 60px;
+        }
+        .header .login-btn, .header .more, .header .cart {
+            margin-left: 20px;
+        }
+        .nav-bar {
+            background-color: #FFFFFF;
+            padding: 10px 20px;
+            border-bottom: 1px solid #E0E0E0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .nav-bar a {
+            text-decoration: none;
+            color: black;
+            margin-right: 20px;
+            padding: 5px 0;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .banner {
+            background-color: #E0E0E0;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        .category-section {
+            margin-bottom: 20px;
+        }
+        .category-section h3 {
+            margin-bottom: 10px;
+        }
+        .category-section .categories {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .category-section .categories .category {
+            flex: 1;
+            margin-right: 10px;
+            background-color: #F0F0F0;
+            padding: 10px;
+            text-align: center;
+            min-width: 100px;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #2874F0;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .header .login-btn, .header .more, .header .cart {
+                margin-left: 10px;
+            }
+            .header .search-bar {
+                margin-right: 10px;
+            }
+            .nav-bar {
+                justify-content: center;
+            }
+            .nav-bar a {
+                margin-right: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header .logo, .header .login-btn, .header .more, .header .cart {
+                margin: 5px 0;
+            }
+            .header .search-bar {
+                margin-right: 0;
+                width: 100%;
+            }
+            .header .search-bar input {
+                width: 100%;
+            }
+            .header .search-bar button {
+                width: 100%;
+                margin-top: 5px;
+            }
+            .nav-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-bar a {
+                margin: 5px 0;
+            }
+            .category-section .categories {
+                flex-direction: column;
+            }
+            .category-section .categories .category {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">Flipkart</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products, brands and more">
+            <button>Search</button>
+        </div>
+        <div class="login-btn">Login</div>
+        <div class="more">More</div>
+        <div class="cart">Cart</div>
+    </div>
+
+    <div class="nav-bar">
+        <a href="#">Electronics</a>
+        <a href="#">TVs & Appliances</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Baby & Kids</a>
+        <a href="#">Home & Furniture</a>
+        <a href="#">Books & More</a>
+    </div>
+
+    <div class="main-content">
+        <div class="banner">Banner Image</div>
+        <div class="category-section">
+            <h3>Top Offers</h3>
+            <div class="categories">
+                <div class="category">Category 1</div>
+                <div class="category">Category 2</div>
+                <div class="category">Category 3</div>
+                <div class="category">Category 4</div>
+            </div>
+        </div>
+        <div class="category-section">
+            <h3>Best of Electronics</h3>
+            <div class="categories">
+                <div class="category">Category 1</div>
+                <div class="category">Category 2</div>
+                <div class="category">Category 3</div>
+                <div class="category">Category 4</div>
+            </div>
+            <h3>Beauty, Food, Toys & more</h3>
+        <div class="categories">
+            <div class="category">Category 1</div>
+            <div class="category">Category 2</div>
+            <div class="category">Category 3</div>
+            <div class="category">Category 4</div>
+        </div>
+        <h3>Sports, Healthcare & more</h3>
+        <div class="categories">
+            <div class="category">Category 1</div>
+            <div class="category">Category 2</div>
+            <div class="category">Category 3</div>
+            <div class="category">Category 4</div>
+        </div>
+        <h3>Best of Health & Wellness</h3>
+        <div class="categories">
+            <div class="category">Category 1</div>
+            <div class="category">Category 2</div>
+            <div class="category">Category 3</div>
+            <div class="category">Category 4</div>
+        </div>
+        <h3>End of Season Bestsellers</h3>
+        <div class="categories">
+            <div class="category">Category 1</div>
+            <div class="category">Category 2</div>
+            <div class="category">Category 3</div>
+            <div class="category">Category 4</div>
+        </div>
+        <h3>Best Gadgets & Appliances</h3>
+        <div class="categories">
+            <div class="category">Category 1</div>
+            <div class="category">Category 2</div>
+            <div class="category">Category 3</div>
+            <div class="category">Category 4</div>
+        </div>
+        <h3>Shop Students Essentials</h3>
+        <div class="categories">
+            <div class="category">Category 1</div>
+            <div class="category">Category 2</div>
+            <div class="category">Category 3</div>
+            <div class="category">Category 4</div>
+        </div>
+        <h3>Home Decore & Furnishings</h3>
+        <div class="categories">
+            <div class="category">Category 1</div>
+            <div class="category">Category 2</div>
+            <div class="category">Category 3</div>
+            <div class="category">Category 4</div>
+        </div>
+
+
+        <h3>Grooming, Books Auto & more</h3>
+        <div class="categories">
+            <div class="category">Category 1</div>
+            <div class="category">Category 2</div>
+            <div class="category">Category 3</div>
+            <div class="category">Category 4</div>
+        </div>
+        <h3>Fashion Top Deals/h3>
+        <div class="categories">
+            <div class="category">Category 1</div>
+            <div class="category">Category 2</div>
+            <div class="category">Category 3</div>
+            <div class="category">Category 4</div>
+        </div>
+        <h3>Pick Your Styles</h3>
+    <div class="categories">
+        <div class="category">Category 1</div>
+        <div class="category">Category 2</div>
+        <div class="category">Category 3</div>
+        <div class="category">Category 4</div>
+    </div>
+    <h3>Top Deals</h3>
+    <div class="categories">
+        <div class="category">Category 1</div>
+        <div class="category">Category 2</div>
+        <div class="category">Category 3</div>
+        <div class="category">Category 4</div>
+    </div>
+    <h3>Top Deals and TV appliances</h3>
+    <div class="categories">
+        <div class="category">Category 1</div>
+        <div class="category">Category 2</div>
+        <div class="category">Category 3</div>
+        <div class="category">Category 4</div>
+    </div>
+        </div>
+        <!-- Add more categories as needed -->
+    </div>
+<div>
+ 
+    <div class="footer">
+        <p>© Developed by Miss Punam Kumari 2024 (only html code for leaning)</p>
+    </div>
+
+</body>
+</html>
